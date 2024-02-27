@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <fieldset>
+            <legend>
+                <h2>SIGN IN</h2>
+
+            </legend>
+            <form>
+                <table>
+                    <tr>
+                        <td>
+
+                            <div class="inp-field">
+                                <input type="text" name="first_name" placeholder="First Name" id="fname"
+                                    onfocusout="firstName()">
+                                <img id="imag_fn" class="msg_img" alt="error_img" src="images/cross.png">
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <div class="inp-field">
+                                <input type="text" name="last_name" placeholder="Last Name" id="lname"
+                                    onfocusout="lastName()">
+                                <img id="imag_ln" class="msg_img" alt="error_img" src="images/cross.png">
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="inp-field">
+                                <input type="number" name="mobile_number" placeholder="Mobile Number" id="number"
+                                    onfocusout="mnumber()">
+                                <img id="imag_mn" class="msg_img" alt="error_img" src="images/cross.png">
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="inp-field">
+                                <input type="date" name="dob" id="dob" onfocusout="dobirth()">
+                                <img id="img_dob" class="msg_img" alt="error_img" src="images/cross.png">
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <div class="inp-field">
+                                <input type="text" name="email" placeholder="Email" id="e_mail" onfocusout="mail()">
+                                <img id="imag_ml" class="msg_img" alt="error_img" src="images/cross.png">
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <div class="inp-field">
+                                <input type="text" name="Remail" placeholder="Re-Email" id="re_mail"
+                                    onfocusout="reEmail()">
+                                <img id="imag_rml" class="msg_img" alt="error_img" src="images/cross.png">
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="inp-field">
+                                <input type="password" name="password" placeholder="Password" id="pwd"
+                                    onfocusout="pd()">
+                                <img id="imag_pwd" class="msg_img" alt="error_img" src="images/cross.png">
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="inp-field">
+                                <input type="checkbox" name="terms&cond" id="checkCond" onfocusout="checkCond()">
+                                <label for="checkCond">I Accept</label>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button type="submit" id="sbmt_btn" disabled>Sign In</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
