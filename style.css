@@ -41,7 +41,7 @@ input[type="text"],
   padding-left: 5px;
   position: absolute;
   top: 0px;
-  /*display:none;" */
+  display:none;"
 }
 
 button[type="submit"] {
